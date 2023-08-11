@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class Options extends PureComponent {
+export default class Options {
   render() {
     return <div>Options</div>;
   }
