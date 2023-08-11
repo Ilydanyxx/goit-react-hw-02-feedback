@@ -12,16 +12,6 @@ export default class App extends Component {
     return good + neutral + bad;
   };
   render() {
-    return (
-      <Container maxWidth="xl">
-        <Statistics
-          good={this.state.good}
-          neutral={this.state.neutral}
-          bad={this.state.bad}
-          total={this.countTotalFeedback()}
-          positivePercentage={this.countPositiveFeedbackPercentage()}
-        />
-      </Container>
-    );
+    return <Container maxWidth="xl"></Container>;
   }
 }
