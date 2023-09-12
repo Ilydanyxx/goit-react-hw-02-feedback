@@ -1,7 +1,13 @@
 import React from 'react';
 
-export default class Options {
+export default class Options({options}) {
   render() {
-    return <div>Options</div>;
+    return <div>{
+      options.map(key => {
+        return <button>
+        {[key]}
+      </button>
+    })
+    }</div>;
   }
 }

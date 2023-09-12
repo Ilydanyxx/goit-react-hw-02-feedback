@@ -1,7 +1,8 @@
 import { Container } from '@mui/material';
 import { Component } from 'react';
+import Statistics from './Statistics/Statistics';
 
-export default class App extends Component {
+export class App extends Component {
   state = {
     good: 0,
     neutral: 0,
@@ -12,6 +13,12 @@ export default class App extends Component {
     return good + neutral + bad;
   };
   render() {
-    return <Container maxWidth="xl"></Container>;
+    return (
+      <Container maxWidth="xl">
+        <p>please leave feedback</p>
+        <button type="button">good</button>
+        <div>`{this.state.good}`</div>
+      </Container>
+    );
   }
 }
